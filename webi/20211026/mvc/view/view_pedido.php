@@ -16,11 +16,13 @@
         <tr>
             <th>Codigo</th>
             <th>Valor</th>
+            <th>Data</th>
         </tr>
         <?php foreach ($pedidos as $pedido): ?>
             <tr>
                 <td><?php echo $pedido["codigo"];?></td>
                 <td><?php echo $pedido["valor"];?></td>
+                <td><?php echo $pedido["data"];?></td>
             </tr>
         <?php endforeach; ?>
     </table>

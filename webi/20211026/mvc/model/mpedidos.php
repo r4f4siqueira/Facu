@@ -1,10 +1,13 @@
 <?php
 
-require_once ("mconection.php");
+
+
 
 class Pedido{
     private $codigo;
     private $valor;
+    private $data;
+    private $conn;
 
     public function getCodigo(){
         return $this->$codigo;
@@ -22,8 +25,32 @@ class Pedido{
         $this->valor = $valor;
     }
 
-    public function create(){
-        $sql = "INSERT INTO pedido (codigo) VALUES ('',$this->valor)"; //('$this->nomecid','$this->uf')";
+    public function getData(){
+        return $this->$data;
+    }
+
+    public function setData(){
+        $this->data = $data;
+    }
+
+    public function __construct()
+    {
+        $this->conectaBD();
+    }
+
+    private function conectaBD(){
+        $server = "localhost";
+        $user = "root";
+        $pass = "";
+        $mydb = "bvendas";
+
+        $this->conn = new mysqli($server,$user,$pass,$mydb);
+        if($this->conn->error)
+            die("Conexão Falhou: ".$this->conn->connect_error);
+    }
+
+    public function create($a,$b){
+        $sql = "INSERT INTO pedido (valor,data) VALUES ($a,$b)"; //('$this->nomecid','$this->uf')";
         echo $sql;
         $this->conn->query($sql);
     }
