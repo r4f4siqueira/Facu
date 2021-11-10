@@ -1,0 +1,7 @@
+composer init
+//Define your dependencies.
+//
+Would you like to define your dependencies (require) interactively [yes]? no
+Would you like to define your dev dependencies (require-dev) interactively [yes]? yes
+Search for a package: phpunit
+Enter package # to add, or the complete package name if it is not listed: 0
