@@ -12,10 +12,10 @@ class ControllerPedidos{
         require_once "view/view_pedido.php";
     }
 
-    public function inserir(){
-        $nome = $_POST['nome'];
-        $data = $_POST['data'];
+    public function inserir($valor,$data){
         $pedido = new Pedido();
-        $pedido->create($nome,$data);
+        $valor = $_POST["valor"];
+        $data = $_POST["data"];
+        $pedido->create($valor,$data);
     }
 }

@@ -2,7 +2,7 @@
 
     require_once "model/Produtos.php";
 
-    class produtoController{
+    class ProdutoController{
         public function listar(){
             $produto = new Produto();
             $produtos = $produto->read();

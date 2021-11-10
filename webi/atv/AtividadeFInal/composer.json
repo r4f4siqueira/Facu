@@ -8,6 +8,11 @@
             "Laboratorio\\AtividadeFinal\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Laboratorio\\AtividadeFinal\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Rafael Siqueira",

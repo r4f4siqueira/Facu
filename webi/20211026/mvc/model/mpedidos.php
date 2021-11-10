@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 class Pedido{
     private $codigo;
     private $valor;
@@ -50,7 +47,7 @@ class Pedido{
     }
 
     public function create($a,$b){
-        $sql = "INSERT INTO pedido (valor,data) VALUES ($a,$b)"; //('$this->nomecid','$this->uf')";
+        $sql = "INSERT INTO pedido (valor,data) VALUES (".$a.",".$b.")"; //('$this->nomecid','$this->uf')";
         echo $sql;
         $this->conn->query($sql);
     }

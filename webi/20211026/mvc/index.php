@@ -6,8 +6,8 @@
     $obj->listar();
     ?>
 
-<form action="controller/cPedidos.php" method="post">
+<form method="post">
     valor:<input type="text" name="valor" id="">
     data:<input type="date" name="data" id="">
-    <input type="submit" value="Add">
+    <input type="submit" value="Add" onclick="inserir()">
 </form>
