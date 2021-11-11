@@ -5,8 +5,8 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '46cec1c68f3fbc4d3944cfb25032e36bd38c2d7c',
-        'name' => 'laboratorio/atividade-final',
+        'reference' => '698c7531cc49835ac1fcb2ec1b230439abeebb83',
+        'name' => 'laboratorio/atividade-final2',
         'dev' => true,
     ),
     'versions' => array(
@@ -19,13 +19,13 @@
             'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
             'dev_requirement' => true,
         ),
-        'laboratorio/atividade-final' => array(
+        'laboratorio/atividade-final2' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '46cec1c68f3fbc4d3944cfb25032e36bd38c2d7c',
+            'reference' => '698c7531cc49835ac1fcb2ec1b230439abeebb83',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(

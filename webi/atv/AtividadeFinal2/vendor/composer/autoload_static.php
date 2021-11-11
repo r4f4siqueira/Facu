@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9
+class ComposerStaticIniteb43170f5f72e1f1b666d564004b64e8
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -21,6 +21,10 @@ class ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
@@ -30,14 +34,14 @@ class ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
         ),
-        'L' => 
-        array (
-            'Laboratorio\\AtividadeFinal\\' => 27,
-        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -45,12 +49,16 @@ class ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
@@ -64,10 +72,6 @@ class ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'Laboratorio\\AtividadeFinal\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -75,6 +79,10 @@ class ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
@@ -710,9 +718,9 @@ class ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitd9507d545f226b8b330a2ebc3f22a4a9::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticIniteb43170f5f72e1f1b666d564004b64e8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticIniteb43170f5f72e1f1b666d564004b64e8::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticIniteb43170f5f72e1f1b666d564004b64e8::$classMap;
 
         }, null, ClassLoader::class);
     }
