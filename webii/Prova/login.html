@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s6 offset-s3">
+                    <form id="form">
+                        <label for="">Login</label>
+                        <input type="text"  id="login">
+                        <label for="">Senha</label>
+                        <input type="password"  id="senha">
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>            
+        </div>
+        <div class="section" id="resposta">
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#form").submit((e)=>{
+                e.preventDefault();
+                var form = {login:$("#login").val(), senha:$("#senha").val()};
+
+                $.post("/login",form,(data)=>{
+                    $("#resposta").html(data);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
