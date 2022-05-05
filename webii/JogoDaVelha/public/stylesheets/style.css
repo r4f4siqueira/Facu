@@ -1,0 +1,31 @@
+.container{
+  background-image: linear-gradient( rgb(0,1,1),rgb(100,100,100));
+}
+
+#jogo{
+  width:603px;
+  height:600px;
+}
+
+.linha{
+  height:200px;
+}
+
+.casa{
+  width:200px;
+  height:100%;
+  border:solid 1px;*/
+  float:left;
+  font-size: 100px;
+  cursor:default;
+
+}
+
+.row{
+  margin-bottom: 0px !important ;
+}
+
+.casa:hover{
+  background-color: aqua;
+  box-shadow: inset 0 0 0.3em rgb(228, 7, 209);
+}

@@ -13,9 +13,8 @@ app.get('/login.html', (req, res) => {
     res.sendFile(__dirname + '/login.html');
 });
 
-
 app.get('/cont', (req, res) => {
-    JSON.stringify(users)
+    res.render("count")
 })
 
 var users = new Object();
